@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
-import { isContainer } from 'postcss-selector-parser';
 
 export default class HomeMenu extends React.Component {
   render() {
