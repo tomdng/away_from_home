@@ -1,5 +1,5 @@
 {
-  "main": "components/App.js",
+  "main": "App.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
