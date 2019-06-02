@@ -1,7 +1,7 @@
 import React from 'react';
 import { createStackNavigator, createAppContainer } from "react-navigation";
-import HomeMenu from '../components/HomeMenu';
-import CardMachine from '../components/CardMachine';
+import HomeMenu from '../layout/HomeMenu';
+import CardMachine from '../layout/articles/CardMachine';
 
 const appNavigator = createStackNavigator(
   {
