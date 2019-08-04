@@ -1,7 +1,7 @@
 import React from 'react';
 import { createAppContainer } from 'react-navigation';
 import { registerRootComponent } from 'expo';
-import appNavigator from 'navigation/Navigator';
+import appNavigator from './navigation/Navigator';
 
 const AppContainer = createAppContainer(appNavigator);
 

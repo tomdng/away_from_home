@@ -1,5 +1,5 @@
 import React from 'react';
-import { createStackNavigator, createAppContainer } from "react-navigation";
+import { createStackNavigator } from "react-navigation";
 import HomeMenu from '../layout/HomeMenu';
 import CardMachine from '../layout/articles/CardMachine';
 
