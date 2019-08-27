@@ -1,27 +1,25 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 import ArticleIcon from '../components/ArticleIcon';
 
-class WorkSection extends React.Component {
+export default class WorkSection extends React.Component {
   render() {
     return (
       <View>
-        <Text>Work Section</Text>
         <ArticleIcon
           imgSource={require('../assets/icon.png')}
-          path="Work1"
-        />
-        <ArticleIcon
-          imgSource={require('../assets/icon.png')}
-          path="Work1"
-        />
-        <ArticleIcon
-          imgSource={require('../assets/icon.png')}
-          path="Work1"
+          path="Work2"
         />
       </View>
     );
   }
 }
 
-export default WorkSection;
+const styles = StyleSheet.create({
+/*
+  TODO: Add the styles for the tutorial cards.
+  Consider the use of JSONs and mapping to generate these tutorial
+  cards, and consider using a constants file for the navigation paths
+  if that's even possible.
+*/
+});

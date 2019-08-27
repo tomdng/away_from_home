@@ -1,13 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import WorkSection from './WorkSection';
+import SectionCard from '../components/SectionCard';
 
 export default class HomeMenu extends React.Component {
   render() {
     return (
       <View>
         <Text style={styles.title}>Away from home</Text>
-        <WorkSection />
+        <SectionCard path="Work1" />
       </View>
     );
   }
@@ -16,11 +16,13 @@ export default class HomeMenu extends React.Component {
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#ffffff',
     flex: 1,
     marginTop: 40,
   },
   title: {
     fontSize: 40,
+    textAlign: 'center',
+    marginTop: 30
   },
 });

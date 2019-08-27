@@ -5,7 +5,7 @@ export default class CardMachine extends React.Component {
   render() {
     return (
       <View>
-        <Text>CardView</Text>
+        <Text>Tutorial for the card machine.</Text>
       </View>
     );
   }
