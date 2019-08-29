@@ -1,10 +1,16 @@
 # away_from_home
 
+[Design layout preview](//www.figma.com/file/k2b6pjDAjA77rf7eumj3Ta/Away-from-Home?node-id=0%3A1)
+
 Away from home is a React Native project that I'm making for my mom specifically. Ever since I was a little child I helped out with doing various chores around the house but also at my mom's restaurant. But since I'm a college student, there's a lot less that I'm able to do since I'm not physically there, and my schedule only keeps me busier and busier so it's also harder for me to just video call about an issue.
 
 So this app is meant to contain a collection of tutorials of things I've learned to work with/fix while I'm not back home. Especially since my mother isn't super fluent with English, I basically end up translating all the instruction manuals into pictures and videos in Chinese so that she and the rest of my family can understand my tutorials.
 
 Examples include doing things like re-programming the garage door opener in our house or resetting the padlock passwords and whatnot. Other tutorials may also include things like paying bills online or troubleshooting wifi issues. So this is essentially like a private wiki-how custom tailored for my family.
+
+## How it's built
+
+Made with React Native using Expo with react-navigation added.
 
 ## Future Features
 
