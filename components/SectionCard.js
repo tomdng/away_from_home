@@ -7,7 +7,7 @@ class sectionCard extends React.Component {
     return (
       <TouchableOpacity onPress={() => this.props.navigation.navigate(this.props.path)}>
         <View style={styles.section_card}>
-          <Text style={styles.card_title}>Work Section</Text>
+          <Text style={styles.card_title}>{this.props.name}</Text>
         </View>
       </TouchableOpacity>
     );

@@ -1,12 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 
-export default class CardMachine extends React.Component {
+export default class WifiReset extends React.Component {
   render() {
     return (
       <View style={styles.tutorial}>
         <Text style={styles.tutorial_title}>IN PROGRESS!</Text>
-        <Text>Tutorial for the card machine.</Text>
+        <Text>Tutorial for resetting the wifi router.</Text>
       </View>
     );
   }

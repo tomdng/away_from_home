@@ -7,7 +7,8 @@ export default class HomeMenu extends React.Component {
     return (
       <View>
         <Text style={styles.title}>Away from home</Text>
-        <SectionCard path="Work1" />
+        <SectionCard name="Work Section" path="Work_Section" />
+        <SectionCard name="Home Section" path="Home_Section" />
       </View>
     );
   }
