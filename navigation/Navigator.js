@@ -3,9 +3,9 @@ import { createStackNavigator } from "react-navigation";
 import HomeMenu from '../layout/HomeMenu';
 import WorkSection from '../layout/WorkSection';
 import HomeSection from '../layout/HomeSection';
-import DoorCloser from '../articles/DoorCloser';
-import CardMachine from '../articles/CardMachine';
-import WifiReset from '../articles/WifiReset'
+import DoorCloser from '../tutorial_data/DoorCloser';
+import CardMachine from '../tutorial_data/CardMachine';
+import WifiReset from '../tutorial_data/WifiReset'
 
 /*
   Consider using an external JSON for the navigation if that's even possible

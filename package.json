@@ -9,7 +9,8 @@
   "dependencies": {
     "eslint": "^6.1.0",
     "expo": "^32.0.0",
-    "expo-cli": "^2.18.3",
+    "expo-cli": "^3.0.10",
+    "global": "^4.4.0",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
     "react-navigation": "^3.11.0",

@@ -11,7 +11,8 @@ Examples include doing things like re-programming the garage door opener in our 
 ## Todo List
 
 * Setup an external storage solution to store images/videos.
-* Start creating tutorials using JSON files.
+* Start creating tutorials using JSON files. I just need one tutorial for each section for the first release.
+* Update the CSS to better match the intended design.
 * Think of a better/more efficient ways to create/store/load content for the tutorials.
 * Add basic authentication and a database/external storage solution for the tutorials themselves.
 * STRETCH GOAL: Create a website that can make tutorials that can be pushed to the database.
