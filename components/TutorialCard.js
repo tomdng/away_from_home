@@ -27,11 +27,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginRight: 40,
     marginLeft: 40,
-    marginTop: 30,
-    backgroundColor:'#68a0cf',
-    borderRadius: 20,
+    marginBottom: 50,
+    backgroundColor:'#384D48',
+    borderRadius: 25,
   },
   text: {
+    color: '#FFFFFF',
     fontSize: 30,
     marginTop: 10,
     marginBottom: 10

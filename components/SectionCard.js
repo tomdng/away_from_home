@@ -18,11 +18,12 @@ const styles = StyleSheet.create({
   section_card: {
     marginRight: 40,
     marginLeft: 40,
-    marginTop: 30,
-    backgroundColor:'#68a0cf',
-    borderRadius: 20,
+    marginBottom: 50,
+    backgroundColor:'#384D48',
+    borderRadius: 25,
   },
   card_title: {
+    color: '#ffffff',
     textAlign: 'center',
     fontSize: 30,
     margin: 40

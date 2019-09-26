@@ -1,26 +1,44 @@
 import React from 'react';
-import { View, Text } from 'react-native';
-import { Remarkable } from 'remarkable';
-
-
-/*
-  Currently doing some markdown-parsing testing with remarkable. I'll most
-  likely rely on a backend method for storing and fetching tutorials in the
-  near future.
-*/
+import { StyleSheet, View, Text, Dimensions } from 'react-native';
+import VideoPreview from '../layout/VideoPreview';
 
 export default class DoorCloser extends React.Component {
   render() {
-    var md = new Remarkable();
-
-    var test_text = md.render('# Step One');
-
     return (
-      <View>
-        <Text>How to adjust the hydraulic door closer</Text>
-        <Text>{test_text}</Text>
-        <Text>Find a 1/8 inch hex driver.</Text>
+      <View style={styles.background}>
+        <View style={styles.title_background}>
+          <Text style={styles.tutorial_title}>Adjust Door Closer</Text>
+        </View>
+        <View style={styles.content}>
+          <VideoPreview
+            source={{ uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4' }}
+          />
+        </View>
       </View>
     )
   } 
 }
+
+const styles = StyleSheet.create({
+  tutorial_title: {
+    color: '#FFFFFF',
+    fontSize: 40,
+    textAlign: 'center'
+  },
+  title_background: {
+    backgroundColor: '#2A2D34',
+    height: 120,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  content: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 50
+  },
+  background: {
+    backgroundColor: '#FFF8F0',
+    height: Dimensions.get('window').height,
+    flexDirection: 'column'
+  }
+})
