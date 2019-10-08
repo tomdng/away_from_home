@@ -2,7 +2,6 @@ import React from 'react';
 import { StyleSheet, View, Image, TouchableOpacity, Text } from 'react-native';
 import { withNavigation } from 'react-navigation';
 
-// TODO: Set up backend with images to pull from for tutorials
 class TutorialCard extends React.Component {
   render() {
     return (
@@ -14,13 +13,15 @@ class TutorialCard extends React.Component {
           <View style={styles.image}>
             <Image
               style={styles.image_size}
-             source={{uri: this.props.imgSource}}/>
+              source={{uri: this.props.imgSource}}/>
           </View>
         </View>
       </TouchableOpacity>
     );
   }
 }
+
+//require('../assets/thumbnails/door_closer_img.jpg')
 
 const styles = StyleSheet.create({
   tutorial_block: {
@@ -42,10 +43,11 @@ const styles = StyleSheet.create({
     width: '100%',
     borderBottomLeftRadius: 20,
     borderBottomRightRadius: 20,
-    overflow: 'hidden'
+    overflow: 'hidden',
   },
   image_size: {
     height: '100%',
+    resizeMode: 'cover'
   }
 });
 

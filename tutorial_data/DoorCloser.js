@@ -11,7 +11,7 @@ export default class DoorCloser extends React.Component {
         </View>
         <View style={styles.content}>
           <VideoPreview
-            source={{ uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4' }}
+            source={{uri: 'https://f001.backblazeb2.com/b2api/v1/b2_download_file_by_id?fileId=4_za39d4b0082b7af7160d70114_f10965e6e4c5ce880_d20191007_m185154_c001_v0001090_t0048'}}
           />
         </View>
       </View>
