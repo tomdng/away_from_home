@@ -1,4 +1,3 @@
-import React from 'react';
 import { createStackNavigator } from "react-navigation";
 import HomeMenu from '../layout/HomeMenu';
 import WorkSection from '../layout/WorkSection';
@@ -7,12 +6,12 @@ import About from '../layout/About';
 import DoorCloser from '../tutorial_data/DoorCloser';
 import CardMachine from '../tutorial_data/CardMachine';
 import WifiReset from '../tutorial_data/WifiReset'
+import { red } from "ansi-colors";
 
 /*
   TODO: Consider using an external JSON for the navigation if
   that's even possible
 */
-
 const appNavigator = createStackNavigator(
   {
     Home: HomeMenu,
@@ -27,6 +26,14 @@ const appNavigator = createStackNavigator(
     defaultNavigationOptions: {
       headerStyle: {
         backgroundColor: '#2A2D34',
+        shadowColor: 'transparent',
+        elevation:0,
+        borderBottomWidth: 0,
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontSize: 40,
+        shadowColor: 'transparent'
       },
     },
   }

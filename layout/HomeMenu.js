@@ -20,22 +20,20 @@ export default class HomeMenu extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  title_text: {
-    color: '#FFFFFF',
-    fontSize: 40,
-    textAlign: 'center',
-  },
   title_background: {
-    backgroundColor: '#2A2D34',
-    height: 120,
     alignItems: 'center',
-    justifyContent: 'center'
+    backgroundColor: '#2A2D34',
+    height: 80,
+    justifyContent: 'center',
+    shadowColor: '#707070',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.5,
+    shadowRadius: 15,
   },
   section_list: {
     marginTop: 50
   },
   background: {
     backgroundColor: '#FFF8F0',
-    height: Dimensions.get('window').height
-  }
+    height: Dimensions.get('window').height,  }
 });

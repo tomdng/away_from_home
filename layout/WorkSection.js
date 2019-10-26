@@ -31,9 +31,14 @@ export default class WorkSection extends React.Component {
 const styles = StyleSheet.create({
   title_background: {
     backgroundColor: '#2A2D34',
-    height: 120,
+    height: 80,
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    justifyContent: 'center',
+    shadowColor: '#707070',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.5,
+    shadowRadius: 15,
   },
   tutorial_list: {
     marginTop: 50

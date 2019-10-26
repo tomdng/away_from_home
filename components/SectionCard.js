@@ -24,6 +24,10 @@ const styles = StyleSheet.create({
     marginBottom: 50,
     backgroundColor:'#384D48',
     borderRadius: 25,
+    shadowColor: '#707070',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.5,
+    shadowRadius: 15
   },
   margins: {
     margin: 40

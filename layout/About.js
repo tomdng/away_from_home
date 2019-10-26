@@ -1,18 +1,31 @@
 import React from 'react';
 import { StyleSheet, View, Text, Dimensions } from 'react-native';
+import Title from '../components/Title';
+import StandardText from '../components/StandardText';
 
 class About extends React.Component {
   render() {
     return(
       <View style={styles.background}>
         <View style={styles.title_background}>
-          <Text style={styles.tutorial_title}>Upcoming Features</Text>
+          <Title title="About" />
         </View>
         <View style={styles.body}>
-          <Text style={styles.desc_text}>By end of 2019, I want to have...</Text>
-          <Text style={styles.desc_text}>Fingerprint authentication</Text>
-          <Text style={styles.desc_text}>Ability to submit tutorials to be approved and added</Text>
-          <Text style={styles.desc_text}>A LOT more tutorials</Text>
+          <StandardText
+            fontColor = "#000"
+            fontSize = "26"
+            text = "Made by Tommy Dong"
+          />
+          <StandardText
+            fontColor = "#000"
+            fontSize = "26"
+            text = "Please email features and suggestions to contact@tomdong.io"
+          />
+          <StandardText
+            fontColor = "#000"
+            fontSize = "26"
+            text = "If you have a great idea for a tutorial, let me know too!"
+          />
         </View>
       </View>
     );
@@ -29,18 +42,17 @@ const styles = StyleSheet.create({
   },
   title_background: {
     backgroundColor: '#2A2D34',
-    height: 120,
+    height: 80,
     alignItems: 'center',
     justifyContent: 'center'
   },
   body: {
+    flexDirection:'column',
+    flexGrow: 0.5,
+    justifyContent: 'space-evenly',
     marginTop: 50,
     marginRight: 40,
     marginLeft: 40
-  },
-  desc_text: {
-    fontSize: 20,
-    marginBottom: 5
   },
   background: {
     backgroundColor: '#FFF8F0',
