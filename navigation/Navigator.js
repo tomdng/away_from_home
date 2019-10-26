@@ -11,7 +11,6 @@ import WifiReset from '../tutorial_data/WifiReset'
 /*
   TODO: Consider using an external JSON for the navigation if
   that's even possible
-  TODO: Make dedicated navigation route to About seciton
 */
 
 const appNavigator = createStackNavigator(
@@ -24,7 +23,12 @@ const appNavigator = createStackNavigator(
     Home_Tut_Wifi_Reset: WifiReset
   },
   {
-    initialRouteName: 'Home'
+    initialRouteName: 'Home',
+    defaultNavigationOptions: {
+      headerStyle: {
+        backgroundColor: '#2A2D34',
+      },
+    },
   }
 );
 

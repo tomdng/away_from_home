@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Image, TouchableOpacity, Text } from 'react-native';
 import { withNavigation } from 'react-navigation';
+import CustomText from '../components/CustomText';
 
 class TutorialCard extends React.Component {
   render() {
@@ -9,7 +10,9 @@ class TutorialCard extends React.Component {
         onPress={() => this.props.navigation.navigate(this.props.path)}
       >
         <View style={styles.tutorial_block}>
-          <Text style={styles.text}>{this.props.name}</Text>
+          <View style={styles.text}>
+            <CustomText text={this.props.name} />
+          </View>
           <View style={styles.image}>
             <Image
               style={styles.image_size}
@@ -33,10 +36,10 @@ const styles = StyleSheet.create({
     borderRadius: 25,
   },
   text: {
-    color: '#FFFFFF',
-    fontSize: 30,
-    marginTop: 10,
-    marginBottom: 10
+    marginTop: 20,
+    marginBottom: 20,
+    marginRight: 20,
+    marginLeft: 20
   },
   image: {
     height: 150,

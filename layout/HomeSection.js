@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import TutorialCard from '../components/TutorialCard'
+import Title from '../components/Title';
 import home_tutorials from '../constants/home_tutorial_list';
 
 export default class HomeSection extends React.Component {
@@ -18,7 +19,7 @@ export default class HomeSection extends React.Component {
 
     return (
       <View>
-        <Text style={styles.section_title}>Home Tutorials</Text>
+        <Title title="Home Tutorials" />
         <View>{tutorial_list}</View>
       </View>
     )

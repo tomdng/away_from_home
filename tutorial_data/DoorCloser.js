@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text, Dimensions } from 'react-native';
+import Title from '../components/Title';
 import VideoPreview from '../layout/VideoPreview';
 
 export default class DoorCloser extends React.Component {
@@ -7,7 +8,7 @@ export default class DoorCloser extends React.Component {
     return (
       <View style={styles.background}>
         <View style={styles.title_background}>
-          <Text style={styles.tutorial_title}>Adjust Door Closer</Text>
+          <Title title="Adjust Door Closer" />
         </View>
         <View style={styles.content}>
           <VideoPreview

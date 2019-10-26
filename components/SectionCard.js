@@ -1,13 +1,16 @@
 import React from 'react';
-import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, TouchableOpacity } from 'react-native';
 import { withNavigation } from 'react-navigation';
+import CustomText from './CustomText';
 
 class sectionCard extends React.Component {
   render() {
     return (
       <TouchableOpacity onPress={() => this.props.navigation.navigate(this.props.path)}>
         <View style={styles.section_card}>
-          <Text style={styles.card_title}>{this.props.name}</Text>
+          <View style={styles.margins}>
+            <CustomText text={this.props.name}/>
+          </View>
         </View>
       </TouchableOpacity>
     );
@@ -22,10 +25,7 @@ const styles = StyleSheet.create({
     backgroundColor:'#384D48',
     borderRadius: 25,
   },
-  card_title: {
-    color: '#ffffff',
-    textAlign: 'center',
-    fontSize: 30,
+  margins: {
     margin: 40
   }
 })
